@@ -29,6 +29,11 @@ const routes = [
     name: "ClientLoginView",
     component: () => import("@/views/auth/ClientLoginView.vue"),
   },
+  {
+    path: "/admin-login",
+    name: "AdminLoginView",
+    component: () => import("@/views/auth/AdminLoginView.vue"),
+  },
 ];
 
 const router = createRouter({

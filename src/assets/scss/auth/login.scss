@@ -9,6 +9,13 @@
     // grid-template-columns: 500px auto;
   }
 
+  &--admin {
+
+    &__container {
+      grid-template-columns: 500px auto;
+    }
+  }
+
   &__head {
     margin-bottom: 35px;
     width: 100%;

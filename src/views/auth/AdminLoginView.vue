@@ -5,10 +5,10 @@
         class="account__header__items d-flex align-items-center justify-content-between"
       ></div>
     </div>
-    <div class="account__container">
-      <!-- <div class="account__left">
+    <div class="account__container account--admin__container">
+      <div class="account__left">
         <div class="account__left__bg"></div>
-      </div> -->
+      </div>
       <div class="account__right d-flex flex-column">
         <div class="account__form__container vh-100">
           <div class="account__form__wrapper d-flex flex-column">
