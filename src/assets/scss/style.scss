@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css');
+
+@font-face{
+  font-family: 'Montserrat-regular';
+  src: url('@/assets/fonts/Montserrat/Montserrat-Regular.ttf');
+}
+@font-face{
+  font-family: 'Montserrat-medium';
+  src: url('@/assets/fonts/Montserrat/Montserrat-Medium.ttf');
+}
+@font-face{
+  font-family: 'Montserrat-semibold';
+  src: url('@/assets/fonts/Montserrat/Montserrat-SemiBold.ttf');
+}
+
+@font-face{
+  font-family: 'Montserrat-bold';
+  src: url('@/assets/fonts/Montserrat/Montserrat-Bold.ttf');
+}
+
+@import 'config.scss';
+@import 'form.scss';
+@import 'auth/login.scss';
+@import 'loanDashboard.scss';
+@import 'modal.scss';

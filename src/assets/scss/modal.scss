@@ -1,0 +1,121 @@
+.modal {
+  background: rgba(0, 0, 0, 0.64);
+  backdrop-filter: blur(14px);
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fcfcfc;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+    flex: 1 1 auto;
+    padding: 4.5rem 5.5rem;
+  }
+
+  &__body {
+    & .form__button--lg {
+      min-width: 13rem;
+    }
+  }
+
+  &.modal__confirm {
+    z-index: 1060 !important;
+  }
+
+  &__confirm {
+    & .modal__dialog {
+      position: relative;
+      width: auto;
+      margin: 0.5rem;
+      transform: scale(0);
+      transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      align-self: center;
+      width: 100%;
+
+      @media (min-width: 560px) {
+        max-width: 500px;
+        margin: auto;
+      }
+    }
+
+    & .modal__content {
+      height: 100%;
+      overflow-y: auto;
+      border-radius: unset;
+      box-shadow: 0px 2px 5px rgb(0 0 0 / 3%);
+      border-radius: 1.5rem;
+    }
+
+    &__button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 1.5rem;
+      text-decoration: none !important;
+      font-style: normal;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.4rem;
+      line-height: 1.5rem;
+      text-align: center;
+      letter-spacing: 0.0115em;
+      text-transform: capitalize;
+      min-width: 13rem !important;
+
+      &--cancel {
+        background-color: #E0E0E0;
+        color: #808191 !important;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  &__header {
+    &__title {
+      font-weight: 600;
+      font-size: 2.4rem;
+      line-height: 3rem;
+      color: #fcfcfc;
+      display: block;
+      font-family: "Montserrat-bold";
+    }
+
+    &__subtitle {
+      font-style: normal;
+      font-weight: 500;
+      font-family: "Montserrat-semibold";
+      font-size: 1.4rem;
+      line-height: 2.6rem;
+      color: #fcfcfc;
+      opacity: 0.9;
+      display: block;
+    }
+  }
+
+  &__head {
+    &__title {
+      font-weight: 600;
+      font-family: "Montserrat-semibold";
+      font-size: 18px;
+      line-height: 28px;
+      color: #1E1F20;
+    }
+
+  }
+}
+
+.modal__confirm.show .modal__dialog {
+  transform: scale(1);
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__close--white {
+  color: #fcfcfc !important;
+  cursor: pointer;
+}

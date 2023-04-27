@@ -1,0 +1,107 @@
+.page__inner {
+  border-radius: 5px;
+  height: 100%;
+  padding: 22px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 100px;
+}
+
+.loan {
+  &__selection {
+    margin-top: 40px;
+  }
+
+  &__dashboard {
+    background: #fff;
+    box-shadow: 0px -2px 15px rgb(120 121 121 / 6%);
+    width: 100%;
+    padding: 20px;
+    margin: 30px 0;
+
+    &__button {
+      & .form__button--lg {
+        min-width: 12rem;
+        height: 4rem;
+      }
+    }
+
+    &__title {
+      font-weight: 600;
+      font-family: "Montserrat-semibold";
+      font-size: 20px;
+      line-height: 28px;
+      color: #1E1F20;
+    }
+
+    & form {
+      & h4 {
+        font-weight: 600;
+        font-family: "Montserrat-semibold";
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &--details {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__card {
+      display: flex;
+      width: 100%;
+      flex: 1;
+      max-width: 100%;
+
+      &--content {
+        width: 100%;
+        text-align: center;
+      }
+
+      &--header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        &__text1 {
+          font-size: 1.3rem;
+          font-family: "Montserrat-semibold";
+        }
+        &__text2 {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.page--spinner {
+  height: 70vh;
+
+  & .spinner-border {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  & span {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Montserrat-semibold";
+  }
+}
+
+.dp__input {
+  background-color: rgba(228, 228, 228, 0.3) !important;
+  font-family: "Montserrat-semibold" !important;
+  font-size: 1.2rem;
+}
+
+.dp-custom-calendar {
+  .dp__calendar_item {
+    font-size: 1.2rem;
+  }
+}

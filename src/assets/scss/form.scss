@@ -1,0 +1,67 @@
+.form {
+  &__item {
+    margin-bottom: 4rem;
+  }
+
+  &__input {
+    background: rgba(228, 228, 228, 0.3);
+    border-radius: 0.8rem;
+    font-style: normal;
+    font-weight: 600;
+    font-family: "Montserrat-semibold";
+    font-size: 1.2rem;
+    line-height: 26px;
+    color: #1E1F20;
+    letter-spacing: 0.0115em;
+    padding: 1.75rem 2.25rem;
+
+    &--lg {
+      height: 50px;
+    }
+  }
+
+  &__label {
+    font-style: normal;
+    font-weight: 600;
+    font-family: "Montserrat-semibold";
+    font-size: 1.2rem;
+    line-height: 14px;
+    letter-spacing: 0.0115em;
+    margin-bottom: 13px;
+    color: #808191;
+    text-transform: capitalize;
+  }
+
+  &__button {
+    background: #1B1D21;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.6rem;
+    color: unset;
+    text-decoration: none !important;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    text-align: center;
+    letter-spacing: 0.0115em;
+    text-transform: capitalize;
+    color: #fff !important;
+
+    &--lg {
+      height: 5.5rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      min-width: 23rem;
+    }
+  }
+}
+
+select {
+  &.select--lg {
+    height: 50px;
+    padding: 1rem 2.25rem;
+  }
+}
